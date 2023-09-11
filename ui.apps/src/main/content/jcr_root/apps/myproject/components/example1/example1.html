@@ -1,0 +1,11 @@
+<div data-sly-use.obj="com.myproject.aem.core.models.Example1SilingModel"></div>
+
+
+<h2> ID : ${obj.id}</h2>
+
+<sly data-sly-list.kvm="${obj.multiChildNodes}">
+<h2>Name :${kvm.name}</h2>
+<h2>Roll No :${kvm.rollno}</h2>
+
+<h2>fileupload:${properties.fileupload}</h2>
+</sly>

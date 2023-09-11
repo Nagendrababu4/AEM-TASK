@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Dialog Box"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <person
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Person Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <name
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Name"
+                                name="./name"/>
+                            <id
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="ID"
+                                name="./id"/>
+                            <dob
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                fieldLabel="Date Of Birth"
+                                name="./dob"/>
+                            <address
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="Address"
+                                name="./address"/>
+                        </items>
+                    </person>
+                    <student
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Student"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <well
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Mutifield"
+                                sling:resourceType="granite/ui/components/coral/foundation/well"
+                                fieldLabel="well">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <personmultifield
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        fieldLabel="Person Mulitfield">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="field"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./personmultifield">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <names
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Names"
+                                                    name="./names"/>
+                                                <rollno
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                    fieldLabel="rollno"
+                                                    name="./rollno"/>
+                                            </items>
+                                        </field>
+                                    </personmultifield>
+                                </items>
+                            </well>
+                        </items>
+                    </student>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,28 @@
+<div data-sly-use.obj="com.myproject.aem.core.models.MyslingExample">
+
+<h1>--------------Student-------------</h1>
+<h2> Name : ${obj.name}</h2>
+<h2> Link : <img src=${obj.link}>  </h2>
+<h2> <img src="images.JPEG" alt="GOT" width="500" height="600"> </h2>
+<h2> ID : ${obj.id}</h2>
+
+<h1>--------------Employee-------------</h1>
+<h2> Dropdown : ${obj.dropdown}</h2>
+<h2> Role : ${obj.role}</h2>
+<h2> Checkbox : ${obj.checkbox}</h2>
+<h2> Text : ${obj.text @context='html'}</h2>
+
+<h1>--------------Manager-------------</h1>
+<h2> Date: ${'yyyy-MM-dd' @format=obj.date}</h2>
+<h2> Address: ${obj.textarea}</h2>
+<h2> colorpicker: ${obj.colorpicker}</h2>
+
+<h1>--------------Annotations-------------</h1>
+<h2> Path : ${obj.path}</h2>
+<h2> Parent : ${obj.parent}</h2>
+<h2> Resource Name : ${obj.names}</h2>
+
+
+
+</div>
+

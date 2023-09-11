@@ -1,0 +1,16 @@
+<div data-sly-use.obj="com.myproject.aem.core.models.PracticeMultifield"></div>
+
+<h2> .........Person Basic Details............</h2>
+
+<h3> Name : ${obj.name}</h3>
+
+<sly data-sly-list.nagendra="${obj.multifield}">
+
+<h2>......Multifield..........</h2>
+
+<h2>Names : ${nagendra.names}</h2>
+<h2>Roll no: ${nagendra.rollno}</h2>
+</sly>
+
+
+
